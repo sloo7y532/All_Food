@@ -1,0 +1,13 @@
+.icon-box {
+  font-size: 1.8rem;
+  width: 40px;
+  height: 40px;
+}
+.contact-info {
+  max-width: 400px;
+}
+.contact-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+}
