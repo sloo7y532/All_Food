@@ -23,7 +23,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: white; 
+  background: white;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -49,7 +49,7 @@ body {
   border-radius: 50%;
   animation: spin 1s linear infinite;
   transform: translate(-50%, -50%);
-  z-index: -1; 
+  z-index: -1;
 }
 /* Spin Animation */
 @keyframes spin {
@@ -404,5 +404,145 @@ h2 {
     padding-top: 5px !important;
     padding-bottom: 5px !important;
     margin-left: 0px;
+  }
+}
+
+/* Menu Tab Navigation */
+.nav-pills .nav-link {
+  color: #6c757d;
+  background-color: transparent;
+  border: 2px solid #e9ecef;
+  border-radius: 25px;
+  padding: 0.75rem 1.5rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.nav-pills .nav-link:hover {
+  color: #ff5600;
+  border-color: #ff5600;
+  background-color: transparent;
+}
+
+.nav-pills .nav-link.active {
+  color: white;
+  background-color: #ff5600;
+  border-color: #ff5600;
+}
+
+/* Menu Section Responsive */
+@media (max-width: 768px) {
+  .nav-pills {
+    flex-wrap: wrap;
+  }
+
+  .nav-pills .nav-link {
+    font-size: 0.875rem;
+    padding: 0.5rem 1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .menu .card-img-top {
+    height: 250px;
+  }
+
+  .menu-overlay h5 {
+    font-size: 1.1rem;
+  }
+
+  .menu-overlay p {
+    font-size: 0.875rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .nav-pills .nav-link {
+    font-size: 0.8rem;
+    padding: 0.4rem 0.8rem;
+  }
+
+  .menu .card-img-top {
+    height: 200px;
+  }
+
+  .display-4 {
+    font-size: 2rem;
+  }
+
+  .lead {
+    font-size: 1rem;
+  }
+}
+
+/* Enhanced Beverage Cards */
+.beverages .card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.beverages .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Menu Item Cards Enhancement */
+.menu-item {
+  transition: transform 0.3s ease;
+}
+
+.menu-item:hover {
+  transform: scale(1.02);
+}
+
+/* Call to Action Section */
+.text-center .btn-lg {
+  transition: all 0.3s ease;
+  border-radius: 25px;
+}
+
+.text-center .btn-lg:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(255, 86, 0, 0.3);
+}
+
+/* Menu Header Styling */
+.menu h2 {
+  color: #2c2c2c;
+  position: relative;
+}
+
+.menu h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: #ff5600;
+  margin: 1rem auto;
+}
+
+/* Price Styling */
+.text-warning {
+  color: #ffc107 !important;
+}
+
+.h4.text-warning {
+  font-weight: 600;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive Grid Adjustments */
+@media (max-width: 992px) {
+  .col-lg-6 {
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .container-xxl {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .menu {
+    padding: 3rem 0;
   }
 }

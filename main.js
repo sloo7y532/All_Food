@@ -16,6 +16,6 @@ document.getElementById("bookingForm").addEventListener("submit", function (e) {
   toast.show();
 
   // Reset form after a moment
-  setTimeout(() => this.reset(), 1500);
+  setTimeout(() => this.reset(), 800);
 });
 
